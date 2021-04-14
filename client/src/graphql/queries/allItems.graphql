@@ -1,0 +1,10 @@
+query AllItems {
+  allItems {
+    id
+    title
+    created_at
+    creator {
+      email
+    }
+  }
+}

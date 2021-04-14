@@ -1,0 +1,15 @@
+mutation AddItem($title: String!) {
+  addItem(title: $title) {
+    errors {
+      field
+      message
+    }
+    item {
+      id
+      title
+      creator {
+        email
+      }
+    }
+  }
+}
